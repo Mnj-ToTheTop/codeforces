@@ -1,39 +1,27 @@
 #include <iostream>
-#include <unordered_map>
 
 using namespace std;
 
 int main(){
+
     string number;
     cin >> number;
+
     int n = number.length();
-    
-    unordered_map<char, int> frequency;
-    char digit;
-    for (int i = 0; i<n; i++){
-        digit = number[i];
-        if (frequency.count(digit)){
-            int newVal = frequency[digit] + 1;
-            frequency[digit] = newVal;
-        }
-        else {
-            frequency[digit] = 1;
+    int count = 0;
+    for (int idx = 0; idx < n; idx++){
+        char digit = number[idx];
+        // We only care abt digits 4 and 7.
+        if(digit == '4' || digit == '7'){
+            count += 1;
         }
     }
 
-    if (frequency.count('4') || frequency.count('7')){
-        int totalCount = frequency['4'] + frequency['7'];
-        if ((totalCount == 4) || (totalCount == 7)){
-            cout<<"YES";
-        }
-        else {
-            cout<<"NO";
-        }
+    if (count == 4 || count == 7){
+        cout << "YES";
     }
     else {
-        cout<<"NO";
+        cout << "NO";
     }
-
-
     return 0;
 }
