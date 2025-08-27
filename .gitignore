@@ -1,0 +1,12 @@
+# Ignore compiled binaries
+*.exe
+*.out
+*.o
+
+# Ignore bin folders anywhere in repo
+bin/
+
+# Ignore build system files (if any in future)
+CMakeFiles/
+*.cmake
+Makefile
