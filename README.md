@@ -1,6 +1,6 @@
 # Competitive Programming in C++
 
-This repository contains my solutions to problems from **Codeforces**, **LeetCode**, and other competitive programming platforms.  
+This repository contains my solutions to problems from **Codeforces**.  
 The main goals of this repo are:
 - Strengthening **C++ proficiency** through problem-solving
 - Building strong **problem-solving and algorithmic skills**
